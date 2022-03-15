@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: 'inter', sans-serif;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(90deg, rgb(36, 112, 77), #64a759);
+    justify-content: space-evenly;
+    align-content: center;
+
+}
+.conteudo{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #124143;
+    border-radius: 25px;
+    align-items: center;
+    box-shadow: 5px 3px 0px 1px rgba(223, 249, 250, 0.3);
+}
+.image{
+    margin-left: 25px;
+}
+.titulos{
+    margin-bottom: 5%;
+    font-size: 13px;
+    color: #82ffc5;
+}
+.titulos a{
+    color: #ffffff;
+}
+.titulos a:hover{
+    text-decoration: underline;
+}
+.login{
+    background-color: #24704d;
+    height: 65%;
+    width: 40%;
+    border-radius: 43px;
+    box-shadow: 5px 5px 0 rgba(223, 249, 250, 0.3);
+}
+.login_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.dados{
+    gap: 50px;
+}
+.login_box h3{
+    font-size: 28px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #fff;
+}
+.email_box{
+    padding-bottom: 30px;
+}
+.input{
+    height: 30px;
+    width: 300px;
+    background-color: #64a759;
+    border: none;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.input::placeholder{
+    color: #fff;
+    text-align: center;
+}
+.entrar{
+    padding-top: 40px;
+    
+}
+.entrar button{
+    width: 300px;
+    height: 45px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+}
+.label{
+    color: #fff;
+}
+.entrar button:hover{
+    background-color:#adf0a2 ;
+    width: 280px;
+    height: 42px
+}
+.entrar button a{
+    color: black;
+    
+}
+.aviso_sem_cadastro_cll{
+    display: none;
+}
+
+@media screen and (max-width:1250px ){
+    .image{
+        display: none;
+    }
+    .login{
+        width: 80%;
+        height: 80%;
+    }
+    .login_box{
+        margin-top: 65px;
+    }
+    .aviso_sem_cadastro_cll{
+        display: block;
+    }
+    .entrar .aviso_sem_cadastro_cll {
+        margin-top: 10px;
+        text-align: center;
+        color: #fff;
+   }
+   .entrar .aviso_sem_cadastro_cll a{
+        color: #64a759;
+        text-decoration: none;
+}
+
+    
+}
+@media screen and (max-width:525px ){
+    .conteudo{
+        width: 95%;
+    }
+    .login{
+        width: 90%;
+        height: 90%;
+    }
+    .login{
+        box-shadow: none
+    }
+    .login_box{
+        margin-top: 100px;
+    }
+    .aviso_sem_cadastro_cll{
+        display: block;
+    }
+    .entrar .aviso_sem_cadastro_cll {
+         margin-top: 10px;
+         text-align: center;
+         color: #fff;
+    }
+    .entrar .aviso_sem_cadastro_cll a{
+        color: #64a759;
+        text-decoration: none;
+    }
+
+}
